@@ -15,22 +15,10 @@ img {
 /**START INDEX**/
 
 /**NAV**/
-
-nav {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 nav ul {
-    display:inline-block;
     align-items: center;
 }
 
-nav ul li {
-    width: fit-content;
-}
 
 nav a {
     text-decoration: none;
@@ -39,6 +27,7 @@ nav a {
     margin: 10px;
     font-size: 20px;
 }
+
 
 .navbar-brand {
     margin: 0px;
@@ -288,6 +277,7 @@ input {
 
 /**NAV**/
 
+/*
 nav {
     flex-direction: row;
     
@@ -308,7 +298,7 @@ nav a {
 #search {
     width: 200px;
   }
-
+*/
 
   /**HEADER**/
 header {
@@ -374,7 +364,7 @@ margin: 8px;
 /**START INDEX**/
 
 /**NAV**/
-
+/*
 nav {
     flex-direction: row;
     align-items: center;
@@ -385,6 +375,7 @@ nav ul {
     padding: 25px;
     display:inline-flex;
 }
+*/
 
 /*sirve para centrar los items del navbar, sin esto se va para la izquierda porque la lista crece*/
 #navbarSupportedContent {
