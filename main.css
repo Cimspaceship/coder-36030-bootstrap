@@ -24,8 +24,12 @@ nav {
 }
 
 nav ul {
-    padding: 25px;
     display:inline-block;
+    align-items: center;
+}
+
+nav ul li {
+    width: fit-content;
 }
 
 nav a {
@@ -34,6 +38,15 @@ nav a {
     color: white;
     margin: 10px;
     font-size: 20px;
+}
+
+.navbar-brand {
+    margin: 0px;
+}
+
+/**HEADER**/
+header {
+    display: none;
 }
 
 /**ESTETICA TITULOS**/
@@ -296,6 +309,12 @@ nav a {
     width: 200px;
   }
 
+
+  /**HEADER**/
+header {
+    display:flex;
+}
+
 /**FOOTER**/
 
 /*menucito y footer*/
@@ -526,9 +545,9 @@ nav ul li {
     transition: all .3s ease-in-out;
 }
 
-nav ul li:hover {
+/**nav ul li:hover {
     border-bottom: 1px solid white;
-}
+}**/
 
 .home-image div {
     transition: all .3s ease-in-out;
