@@ -386,6 +386,13 @@ nav ul {
     display:inline-flex;
 }
 
+/*sirve para centrar los items del navbar, sin esto se va para la izquierda porque la lista crece*/
+#navbarSupportedContent {
+    flex-grow: 0;
+}
+
+
+
 /**MAIN**/
 
 /*nucleo de productos en home*/
@@ -538,6 +545,19 @@ td {
 input {
     margin: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*animaciones/transiciones*/
