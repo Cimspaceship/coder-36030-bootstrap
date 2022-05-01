@@ -63,13 +63,23 @@ h4 {
 .home-image {
     display:flex;
     flex-direction: column;
-    margin: 50px;
     justify-content: center;
     align-items: center;
 }
 
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
 .home-image div {
-    margin: 25px;
+    margin-top:  25px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .home-image div h3 {
@@ -270,6 +280,7 @@ input {
 
 
 
+
 /******MOBILE 768PX PRIMER MEDIA QUERIE*****/
 
 @media screen and (min-width:768px) {
@@ -304,6 +315,14 @@ nav a {
 header {
     display:flex;
 }
+
+/**MAIN**/
+
+/*nucleo de productos en home*/
+.row {
+    flex-direction: column;
+}
+
 
 /**FOOTER**/
 
@@ -388,6 +407,9 @@ nav ul {
 
 /*nucleo de productos en home*/
 .home-image {
+    flex-direction: row;
+}
+.row {
     flex-direction: row;
 }
 
@@ -560,11 +582,11 @@ nav ul li {
     border-bottom: 1px solid white;
 }**/
 
-.home-image div {
+.div-zoom {
     transition: all .3s ease-in-out;
 }
 
-.home-image div:hover {
+.div-zoom:hover {
     transform: scale(1.1);
 }
 
