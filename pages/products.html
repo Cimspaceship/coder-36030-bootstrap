@@ -13,25 +13,62 @@
 <body>
     <div class="main-wrapper-products">
 
- <nav> 
-    <section>
-        <span id="top"><img src="../assets/core/galactic-logo1.png"  alt="logo tienda esquina sup izq"></span>
-        <input type="search" placeholder="¿qué estas buscando?" id="search">
-        
-        <ul>
-            <li>
-                <h1> <a href="../index.html" class="link-light">Inicio</a> </h1>
-            </li>
-            <li> <a href="products.html" class="link-light">Productos</a>
-            <li> <a href="pcbuild.html" class="link-light">Arma tu PC</a>
-            <li><a href="#contacto" class="link-light">Contacto</a>
-            <li><a href="login.html" class="link-light">Login</a>
-            <li><img src="../assets/core/cart1.png" alt="revisar-carrito-compra-icono">
+ <!--arranca nav--> 
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
+
+    <!--contenedor core del nav-->
+    <div class="container-fluid d-flex justify-content-center">
+
+        <!--navbar brand cambiar por logo giratorio-->
+      <img class="navbar-brand" id="logo-home" src="../assets/core/galactic-logo1.png"  alt="logo tienda esquina sup izq">
+
+        <!--menu busqueda-->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
+      </form>
+
+      <!--menu hamburguesa-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--navbar items, las clases del primer div son para el menu hamburguesa-->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <!--arrancan los items-->
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Productos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="pcbuild.html">Arma tu PC</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+
+          <li class="nav-item">
+            <img class="nav-link" src="../assets/core/cart1.png" alt="revisar-carrito-compra-icono">
+          </li>
+
         </ul>
+
         
-        
-    </section>
-</nav>
+      </div>
+    </div>
+  </nav>
 
 
         <section class="menu-products">
@@ -161,7 +198,7 @@
 
 
 
-    <footer>
+    <footer class="navbar-dark bg-dark bg-gradient">
 
             <div class="micro-menu">
     
