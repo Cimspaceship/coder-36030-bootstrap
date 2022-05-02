@@ -44,6 +44,7 @@ h2 {
     font-weight: 700;
     border-bottom: solid black;
     padding: 15px;
+    margin-top: 15px;
 }
 
 h3 {
@@ -55,6 +56,7 @@ h4 {
     font-family: sans-serif;
     font-weight: 700;
     width:fit-content;
+    flex-wrap: wrap;
 }
 
 /**MAIN**/
@@ -170,18 +172,15 @@ padding: 4px;
     display: grid;
     grid-template-areas:
     "nav"
-    "aside"
     "main"
     "footer"
     ;
 }
 
 .menu-products {
-    grid-area: aside;
+    grid-area: main;
     display: flex;
     justify-content: center; 
-    margin-top: 20px;
-    margin-bottom: 45px;  
 }
 
 .titulo-productos-variable {
@@ -191,6 +190,12 @@ padding: 4px;
 
 }
 
+table h2 {
+    display: flex;
+    justify-content: center;
+}
+
+/*catalogo productos*/
 .catalogo-products {
     display:flex;
     flex-direction: column;
@@ -199,10 +204,11 @@ padding: 4px;
 }
 
 .catalogo-products div {
-  margin: 30px;
   width: fit-content;
-  justify-self: center;
+  margin: 30px;
 }
+
+
 
 
 /**PC-BUILD**/
@@ -286,30 +292,6 @@ input {
 @media screen and (min-width:768px) {
     /**START INDEX**/
 
-/**NAV**/
-
-/*
-nav {
-    flex-direction: row;
-    
-}
-
-nav ul {
-    display:inline-flex;
-    justify-content:space-around;
-}
-
-nav a {
-    text-decoration: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    margin: 10px;
-    font-size: 20px;
-}
-#search {
-    width: 200px;
-  }
-*/
 
   /**HEADER**/
 header {
@@ -319,9 +301,6 @@ header {
 /**MAIN**/
 
 /*nucleo de productos en home*/
-.row {
-    flex-direction: column;
-}
 
 
 /**FOOTER**/
@@ -381,20 +360,6 @@ margin: 8px;
 @media screen and (min-width:1024px) {
 
 /**START INDEX**/
-
-/**NAV**/
-/*
-nav {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-nav ul {
-    padding: 25px;
-    display:inline-flex;
-}
-*/
 
 /*sirve para centrar los items del navbar, sin esto se va para la izquierda porque la lista crece*/
 #navbarSupportedContent {
@@ -466,14 +431,14 @@ td {
     display: grid;
     grid-template-areas:
     "nav nav"
-    "aside main"
+    "main main"
     "footer footer"
     ;
     grid-template-columns: 1fr 5fr;
 }
 
 .menu-products {
-    grid-area: aside;
+    grid-area: main;
     display: flex;
     justify-content: center; 
 }
@@ -493,10 +458,7 @@ td {
     flex-wrap: wrap;
 }
 
-.catalogo-products div {
-  width: fit-content;
-  justify-self: center;
-}
+
 
 
 /**PC-BUILD**/
