@@ -4,6 +4,7 @@ body {
     background-color: whitesmoke;
 }
 /*para que se ajusten las imagenes (ver banner ej)*/
+
 img {
     max-width: 100%;
     height: auto;
@@ -50,6 +51,8 @@ h2 {
 h3 {
     font-family: sans-serif;
     font-weight: 700;
+    height:fit-content;
+    flex-wrap: wrap;
 }
 
 h4 {
@@ -337,6 +340,12 @@ margin: 8px;
     flex-wrap: wrap;
 }
 
+/*PC BUILD*/
+
+.pcbuild-step2-amd {
+    flex-direction: row;
+}
+
 
 
 
@@ -491,18 +500,11 @@ td {
     justify-content: center;
 }
 
-.pcbuild-step2-amd div {
-    margin: 25px;
-}
 
 .pcbuild-step2-amd h3 {
     text-align: center;
 }
 
-.pcbuild-step2-amd img {
-    max-width: 100%;
-    height: auto;
-}
 
 
 /**LOGIN**/
