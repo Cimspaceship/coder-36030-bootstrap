@@ -547,9 +547,9 @@ nav ul li {
     transition: all .3s ease-in-out;
 }
 
-/**nav ul li:hover {
+nav ul li:hover {
     border-bottom: 1px solid white;
-}**/
+}
 
 .div-zoom {
     transition: all .3s ease-in-out;
